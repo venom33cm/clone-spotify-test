@@ -93,11 +93,14 @@ hr,
   margin-bottom: 20px;
 }
 .welcome {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* display: grid; */
+  /* place-items: center; */
   height: 80vh;
-  white-space: pre;
-  margin: auto;
+  /* white-space: pre;
+  margin: auto; */
 }
 
 .welhead > h1 {
@@ -120,7 +123,7 @@ hr,
     margin-top: 30px;
     height: 550px;
     margin-left: auto;
-    width: 360px;
+    width: 350px;
     object-fit: contain;
   }
 
@@ -134,5 +137,21 @@ hr,
     white-space: pre;
     flex: 0.6;
     font-size: 0.8rem;
+  }
+
+  .welcome {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 80vh;
+
+    /* max-width: 200px; */
+    flex-wrap: wrap;
+  }
+  .welhead > h1 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
