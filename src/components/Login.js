@@ -1,7 +1,7 @@
 import React from "react";
 import "./login.css";
 
-const auth_uri = `https://accounts.spotify.com/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}&https://clones-spotify.herokuapp.com/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state&response_type=token&show_dialog=true`;
+const auth_uri = `https://accounts.spotify.com/authorize?client_id=${process.env.REACT_APP_CLIENT_ID}&redirect_uri:https://clones-spotify.herokuapp.com/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state&response_type=token&show_dialog=true`;
 function Login() {
   return (
     <div className="login">
