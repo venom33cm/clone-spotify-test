@@ -60,7 +60,7 @@ function Dashboard({ token }) {
   useEffect(() => {
     if (!playTrack) return;
     axios
-      .get("https://spotify-myclone-server.herokuapp.com/lyrics", {
+      .get("https://server-spotify-clone.herokuapp.com/lyrics", {
         params: {
           title: playTrack.name,
           artist: playTrack.artist,
