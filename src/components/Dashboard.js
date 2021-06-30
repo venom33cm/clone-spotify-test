@@ -28,7 +28,7 @@ function Dashboard({ token }) {
     console.log(track.largerpic);
     setSearch("");
   }
-  console.log(searchresults);
+  // console.log(searchresults);
 
   spotify.setAccessToken(token);
   if (token) {
@@ -67,7 +67,7 @@ function Dashboard({ token }) {
         },
       })
       .then((res) => {
-        console.log(res.data.lyrics);
+        // console.log(res.data.lyrics);
         setlyrics(res.data.lyrics);
       });
   }, [playTrack]);

@@ -19,9 +19,9 @@ function App() {
     const _token = gettoken.access_token;
     const expires = gettoken.expires_in;
     settoken(_token);
-    console.log(gettoken);
-    console.log("the token after my hard ass >>>>>>>", _token);
-    console.log("the expiry  after my hard ass >>>>>>>", expires);
+    // console.log(gettoken);
+    // console.log("the token after one event >>>>>>>", _token);
+    // console.log("the expiry  after my event >>>>>>>", expires);
   }, []);
 
   return (
